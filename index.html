@@ -9,13 +9,18 @@
 <body>
     <div class="container">
         <h1>PokeAPI Information Searcher</h1>
+        <!-- input form to get name of pokemon to search for -->
         <form id="poke-form">
             <input type="text" id="poke-input" placeholder="Enter Pokemon Name" required>
             <button type="submit" id="submit">Search</button>
         </form>
+        <!-- run script that listens for button click then grabs the pokemon info using PokeAPI and displays it below-->
         <script src="scripts/poke.js"></script>
+
+        <!-- div to display the successfully retrieved info about the searched for pokemon-->
         <div id="poke-result"></div>
-        <div id="poke-error" class="error"></div>
+        <!-- div to display error message if the pokemon is not found or if there is an error in the request-->
+        <div id="poke-error"></div>
     </div>
 </body>
 </html>
