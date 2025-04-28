@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PokeAPI Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>PokeAPI Information Searcher</h1>
+        <form id="poke-form">
+            <input type="text" id="poke-input" placeholder="Enter Pokemon Name" required>
+            <button type="submit" id="submit">Search</button>
+        </form>
+        <script src="scripts/poke.js"></script>
+        <div id="poke-result"></div>
+        <div id="poke-error" class="error"></div>
+    </div>
 </body>
 </html>
